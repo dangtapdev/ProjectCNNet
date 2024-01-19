@@ -47,3 +47,15 @@ D:\dl\ProjectNet\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\obj\Debug\net7.0
 D:\dl\ProjectNet\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\obj\Debug\net7.0\refint\DataAccessLayer.dll
 D:\dl\ProjectNet\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.pdb
 D:\dl\ProjectNet\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\obj\Debug\net7.0\ref\DataAccessLayer.dll
+C:\Users\HuyKhang\OneDrive\Desktop\Hoc Tap\CongNgheDotNet\src\GitHubRepo_CNDN\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.deps.json
+C:\Users\HuyKhang\OneDrive\Desktop\Hoc Tap\CongNgheDotNet\src\GitHubRepo_CNDN\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.dll
+C:\Users\HuyKhang\OneDrive\Desktop\Hoc Tap\CongNgheDotNet\src\GitHubRepo_CNDN\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.pdb
+C:\Users\HuyKhang\OneDrive\Desktop\Hoc Tap\CongNgheDotNet\src\GitHubRepo_CNDN\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\HuyKhang\OneDrive\Desktop\Hoc Tap\CongNgheDotNet\src\GitHubRepo_CNDN\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HuyKhang\OneDrive\Desktop\Hoc Tap\CongNgheDotNet\src\GitHubRepo_CNDN\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\HuyKhang\OneDrive\Desktop\Hoc Tap\CongNgheDotNet\src\GitHubRepo_CNDN\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\HuyKhang\OneDrive\Desktop\Hoc Tap\CongNgheDotNet\src\GitHubRepo_CNDN\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\HuyKhang\OneDrive\Desktop\Hoc Tap\CongNgheDotNet\src\GitHubRepo_CNDN\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.dll
+C:\Users\HuyKhang\OneDrive\Desktop\Hoc Tap\CongNgheDotNet\src\GitHubRepo_CNDN\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\obj\Debug\net7.0\refint\DataAccessLayer.dll
+C:\Users\HuyKhang\OneDrive\Desktop\Hoc Tap\CongNgheDotNet\src\GitHubRepo_CNDN\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.pdb
+C:\Users\HuyKhang\OneDrive\Desktop\Hoc Tap\CongNgheDotNet\src\GitHubRepo_CNDN\ProjectCNDN_Revamp\PROJECTCNDN\DataAccessLayer\obj\Debug\net7.0\ref\DataAccessLayer.dll
