@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BussinessLogicLayer;
 
 namespace GUI_Class.ChildForm
 {
@@ -15,6 +16,11 @@ namespace GUI_Class.ChildForm
         public Customers()
         {
             InitializeComponent();
+        }
+
+        private void Customers_Load(object sender, EventArgs e)
+        {
+            BLL.ShowCustomerInfo();
         }
     }
 }

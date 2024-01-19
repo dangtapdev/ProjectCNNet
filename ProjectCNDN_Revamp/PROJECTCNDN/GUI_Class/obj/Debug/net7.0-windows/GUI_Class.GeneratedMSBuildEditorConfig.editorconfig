@@ -14,6 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GUI_Class
-build_property.ProjectDir = D:\dl\ProjectNet\ProjectCNDN_Revamp\PROJECTCNDN\GUI_Class\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\HuyKhang\OneDrive\Desktop\Hoc Tap\CongNgheDotNet\src\huykhang_cndn\ProjectCNDN_Revamp\PROJECTCNDN\GUI_Class\

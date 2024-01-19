@@ -14,7 +14,7 @@ namespace DataAccessLayer
         public static DataTable LayKhachHang()
         {
             using(DataAccess db =new DataAccess())
-            {
+            {                
                 var customers = db.DSCustomer.ToList();
                 DataTable dt = new DataTable();
                 foreach(var prop in typeof(DataTable).GetProperties())

@@ -4,8 +4,8 @@ using Microsoft.EntityFrameworkCore;
 namespace DataAccessLayer
 {
     public class DataAccess:DbContext
-    {
-        string connection = @"Data Source=DESKTOP-CLFQTCU;Initial Catalog=ProjectcnDotNet_CDM;Integrated Security=True;Trust Server Certificate=True";
+    {        
+        string connection = @"Data Source=KHANGLAPTOP;Initial Catalog=ProjectcnDotNet_CDM;Integrated Security=True; Trust Server Certificate=True";
         public DbSet<Account> DSAccount { get; set; }
         public DbSet<Car> DSCar { get; set; }
         public DbSet<Customer> DSCustomer { get; set; }
