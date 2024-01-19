@@ -71,7 +71,7 @@ create table TRANSACTIONS
 
 INSERT INTO AccountList VALUES ('000','admin','dotnet',1)
 INSERT INTO AccountList VALUES ('001','nhanvien1','nhanvien1',0)
-INSERT INTO AccountList VALUES ('002','nhanvien2','nhanvien2',0)
+--INSERT INTO AccountList VALUES ('002','nhanvien2','nhanvien2',0)
 
 INSERT INTO CUSTOMERS VALUES
 ('CS901','Smith John',123102,0223456221,'Sj12@gmail.com','12th Avenue, Yonkers'),

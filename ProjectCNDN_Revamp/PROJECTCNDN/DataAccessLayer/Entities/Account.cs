@@ -19,7 +19,12 @@ namespace DataAccessLayer.Entities
         public string Account_Username { get; set; }
         [StringLength(20)]
         public string Account_Password { get; set;}
-        private byte IsManager {  get; set; }
+        private byte isManager;
+        public byte IsManager
+        {
+            get { return isManager; }
+            set { isManager = value; }
+        }
         [NotMapped]
         public string Job_Title => IsManager == 1 ? "Quản lý" : "Nhân viên";
     }

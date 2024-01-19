@@ -10,7 +10,8 @@
 
         private void MAIN_UI_Load(object sender, EventArgs e)
         {
-
+            label2.Text = "";
+            label4.Text = Login.job_title;
         }
         private void OpenChildForm(Form childForm, object btnSender)
         {

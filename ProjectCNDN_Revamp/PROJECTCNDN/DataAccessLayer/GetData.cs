@@ -11,6 +11,15 @@ namespace DataAccessLayer
 {
     public class GetData
     {        
+        public static List<Account> LayDSAcc()
+        {
+            List<Account> list = null;
+            using (DataAccess db = new DataAccess())
+            {
+                list = db.DSAccount.ToList();
+            }
+            return list;
+        }
         public static DataTable LayKhachHang()
         {
             using(DataAccess db =new DataAccess())
