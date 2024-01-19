@@ -45,15 +45,15 @@
             label2 = new Label();
             label1 = new Label();
             dgv_Trans = new DataGridView();
+            btn_XoaGD = new Button();
+            btn_SuaGD = new Button();
+            btn_ThemGD = new Button();
             Col_CusID = new DataGridViewTextBoxColumn();
             Col_Fullname = new DataGridViewTextBoxColumn();
             Col_SDT = new DataGridViewTextBoxColumn();
             Col_CaID = new DataGridViewTextBoxColumn();
             Col_Taxes = new DataGridViewTextBoxColumn();
             Col_Tong = new DataGridViewTextBoxColumn();
-            btn_XoaGD = new Button();
-            btn_SuaGD = new Button();
-            btn_ThemGD = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Trans).BeginInit();
             SuspendLayout();
@@ -238,48 +238,6 @@
             dgv_Trans.Size = new Size(783, 409);
             dgv_Trans.TabIndex = 35;
             // 
-            // Col_CusID
-            // 
-            Col_CusID.HeaderText = "Mã GD";
-            Col_CusID.MinimumWidth = 6;
-            Col_CusID.Name = "Col_CusID";
-            Col_CusID.Width = 120;
-            // 
-            // Col_Fullname
-            // 
-            Col_Fullname.HeaderText = "Mã KH ";
-            Col_Fullname.MinimumWidth = 6;
-            Col_Fullname.Name = "Col_Fullname";
-            Col_Fullname.Width = 120;
-            // 
-            // Col_SDT
-            // 
-            Col_SDT.HeaderText = "Mã NV ";
-            Col_SDT.MinimumWidth = 6;
-            Col_SDT.Name = "Col_SDT";
-            Col_SDT.Width = 125;
-            // 
-            // Col_CaID
-            // 
-            Col_CaID.HeaderText = "Mã xe";
-            Col_CaID.MinimumWidth = 6;
-            Col_CaID.Name = "Col_CaID";
-            Col_CaID.Width = 125;
-            // 
-            // Col_Taxes
-            // 
-            Col_Taxes.HeaderText = "Thuế";
-            Col_Taxes.MinimumWidth = 6;
-            Col_Taxes.Name = "Col_Taxes";
-            Col_Taxes.Width = 125;
-            // 
-            // Col_Tong
-            // 
-            Col_Tong.HeaderText = "Tổng giá trị";
-            Col_Tong.MinimumWidth = 6;
-            Col_Tong.Name = "Col_Tong";
-            Col_Tong.Width = 125;
-            // 
             // btn_XoaGD
             // 
             btn_XoaGD.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -313,6 +271,54 @@
             btn_ThemGD.Text = "Tạo mới GD";
             btn_ThemGD.UseVisualStyleBackColor = true;
             // 
+            // Col_CusID
+            // 
+            Col_CusID.DataPropertyName = "Transaction_ID";
+            Col_CusID.HeaderText = "Mã GD";
+            Col_CusID.MinimumWidth = 6;
+            Col_CusID.Name = "Col_CusID";
+            Col_CusID.Width = 120;
+            // 
+            // Col_Fullname
+            // 
+            Col_Fullname.DataPropertyName = "Customer_ID";
+            Col_Fullname.HeaderText = "Mã KH ";
+            Col_Fullname.MinimumWidth = 6;
+            Col_Fullname.Name = "Col_Fullname";
+            Col_Fullname.Width = 120;
+            // 
+            // Col_SDT
+            // 
+            Col_SDT.DataPropertyName = "SalesPerson_ID";
+            Col_SDT.HeaderText = "Mã NV ";
+            Col_SDT.MinimumWidth = 6;
+            Col_SDT.Name = "Col_SDT";
+            Col_SDT.Width = 125;
+            // 
+            // Col_CaID
+            // 
+            Col_CaID.DataPropertyName = "Car_ID";
+            Col_CaID.HeaderText = "Mã xe";
+            Col_CaID.MinimumWidth = 6;
+            Col_CaID.Name = "Col_CaID";
+            Col_CaID.Width = 125;
+            // 
+            // Col_Taxes
+            // 
+            Col_Taxes.DataPropertyName = "Taxes_Fees";
+            Col_Taxes.HeaderText = "Thuế";
+            Col_Taxes.MinimumWidth = 6;
+            Col_Taxes.Name = "Col_Taxes";
+            Col_Taxes.Width = 125;
+            // 
+            // Col_Tong
+            // 
+            Col_Tong.DataPropertyName = "Price";
+            Col_Tong.HeaderText = "Tổng giá trị";
+            Col_Tong.MinimumWidth = 6;
+            Col_Tong.Name = "Col_Tong";
+            Col_Tong.Width = 125;
+            // 
             // Transactions
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -329,6 +335,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "Transactions";
             Text = "Transactions";
+            Load += Transactions_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Trans).EndInit();
@@ -355,14 +362,14 @@
         private Label label2;
         private Label label1;
         private DataGridView dgv_Trans;
+        private Button btn_XoaGD;
+        private Button btn_SuaGD;
+        private Button btn_ThemGD;
         private DataGridViewTextBoxColumn Col_CusID;
         private DataGridViewTextBoxColumn Col_Fullname;
         private DataGridViewTextBoxColumn Col_SDT;
         private DataGridViewTextBoxColumn Col_CaID;
         private DataGridViewTextBoxColumn Col_Taxes;
         private DataGridViewTextBoxColumn Col_Tong;
-        private Button btn_XoaGD;
-        private Button btn_SuaGD;
-        private Button btn_ThemGD;
     }
 }

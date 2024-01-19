@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BussinessLogicLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace GUI_Class.ChildForm
         public Manufacturers()
         {
             InitializeComponent();
+        }
+
+        private void Manufacturers_Load(object sender, EventArgs e)
+        {
+            dgv_NSX.DataSource = BLL.LayNSX();
         }
     }
 }

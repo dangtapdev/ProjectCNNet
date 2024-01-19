@@ -201,6 +201,7 @@
             // 
             // Col_CusID
             // 
+            Col_CusID.DataPropertyName = "Man_ID";
             Col_CusID.HeaderText = "Mã NSX";
             Col_CusID.MinimumWidth = 6;
             Col_CusID.Name = "Col_CusID";
@@ -208,6 +209,7 @@
             // 
             // Col_Fullname
             // 
+            Col_Fullname.DataPropertyName = "Man_Name";
             Col_Fullname.HeaderText = "Tên NSX";
             Col_Fullname.MinimumWidth = 6;
             Col_Fullname.Name = "Col_Fullname";
@@ -215,6 +217,7 @@
             // 
             // Col_SDT
             // 
+            Col_SDT.DataPropertyName = "Man_Location";
             Col_SDT.HeaderText = "Địa chỉ";
             Col_SDT.MinimumWidth = 6;
             Col_SDT.Name = "Col_SDT";
@@ -236,6 +239,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "Manufacturers";
             Text = "Manufacturers";
+            Load += Manufacturers_Load;
             ((System.ComponentModel.ISupportInitialize)dgv_NSX).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

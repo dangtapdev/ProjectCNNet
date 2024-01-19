@@ -12,7 +12,7 @@ namespace DataAccessLayer.Entities
     [Table("TRANSACTIONS"),PrimaryKey("Transaction_ID")]
     public class Transaction
     {
-        [StringLength(6)]
+        [StringLength(6), RegularExpression(@"^[A-Z][A-Z]-[0-9][0-9][0-9]$")]
         public string Transaction_ID { get; set; }
         [StringLength(6),ForeignKey("CUSTOMERS")]
         public string Customer_ID { get; set; }

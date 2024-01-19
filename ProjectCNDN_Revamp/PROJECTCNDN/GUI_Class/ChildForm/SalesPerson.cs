@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BussinessLogicLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace GUI_Class.ChildForm
         public SalesPerson()
         {
             InitializeComponent();
+        }
+
+        private void SalesPerson_Load(object sender, EventArgs e)
+        {
+            dgv_NV.DataSource = BLL.LayNV();
         }
     }
 }

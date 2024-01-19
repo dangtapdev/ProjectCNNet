@@ -45,13 +45,15 @@
             label2 = new Label();
             label1 = new Label();
             dgv_NV = new DataGridView();
+            btn_XoaNV = new Button();
+            btn_SuaNV = new Button();
+            btn_ThemNV = new Button();
             Col_CusID = new DataGridViewTextBoxColumn();
             Col_Fullname = new DataGridViewTextBoxColumn();
             Col_SDT = new DataGridViewTextBoxColumn();
             Col_CaID = new DataGridViewTextBoxColumn();
-            btn_XoaNV = new Button();
-            btn_SuaNV = new Button();
-            btn_ThemNV = new Button();
+            Info_Address = new DataGridViewTextBoxColumn();
+            Salary = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_NV).BeginInit();
             SuspendLayout();
@@ -227,7 +229,7 @@
             // 
             dgv_NV.BackgroundColor = SystemColors.ButtonHighlight;
             dgv_NV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_NV.Columns.AddRange(new DataGridViewColumn[] { Col_CusID, Col_Fullname, Col_SDT, Col_CaID });
+            dgv_NV.Columns.AddRange(new DataGridViewColumn[] { Col_CusID, Col_Fullname, Col_SDT, Col_CaID, Info_Address, Salary });
             dgv_NV.Location = new Point(25, 83);
             dgv_NV.Margin = new Padding(3, 4, 3, 4);
             dgv_NV.Name = "dgv_NV";
@@ -235,34 +237,6 @@
             dgv_NV.RowTemplate.Height = 25;
             dgv_NV.Size = new Size(765, 409);
             dgv_NV.TabIndex = 27;
-            // 
-            // Col_CusID
-            // 
-            Col_CusID.HeaderText = "Mã NV";
-            Col_CusID.MinimumWidth = 6;
-            Col_CusID.Name = "Col_CusID";
-            Col_CusID.Width = 110;
-            // 
-            // Col_Fullname
-            // 
-            Col_Fullname.HeaderText = "Họ và tên";
-            Col_Fullname.MinimumWidth = 6;
-            Col_Fullname.Name = "Col_Fullname";
-            Col_Fullname.Width = 200;
-            // 
-            // Col_SDT
-            // 
-            Col_SDT.HeaderText = "Số điện thoại";
-            Col_SDT.MinimumWidth = 6;
-            Col_SDT.Name = "Col_SDT";
-            Col_SDT.Width = 150;
-            // 
-            // Col_CaID
-            // 
-            Col_CaID.HeaderText = "Email ";
-            Col_CaID.MinimumWidth = 6;
-            Col_CaID.Name = "Col_CaID";
-            Col_CaID.Width = 150;
             // 
             // btn_XoaNV
             // 
@@ -297,6 +271,54 @@
             btn_ThemNV.Text = "Thêm NV mới";
             btn_ThemNV.UseVisualStyleBackColor = true;
             // 
+            // Col_CusID
+            // 
+            Col_CusID.DataPropertyName = "SalesPerson_ID";
+            Col_CusID.HeaderText = "Mã NV";
+            Col_CusID.MinimumWidth = 6;
+            Col_CusID.Name = "Col_CusID";
+            Col_CusID.Width = 110;
+            // 
+            // Col_Fullname
+            // 
+            Col_Fullname.DataPropertyName = "FullName";
+            Col_Fullname.HeaderText = "Họ và tên";
+            Col_Fullname.MinimumWidth = 6;
+            Col_Fullname.Name = "Col_Fullname";
+            Col_Fullname.Width = 200;
+            // 
+            // Col_SDT
+            // 
+            Col_SDT.DataPropertyName = "ContactNumber";
+            Col_SDT.HeaderText = "Số điện thoại";
+            Col_SDT.MinimumWidth = 6;
+            Col_SDT.Name = "Col_SDT";
+            Col_SDT.Width = 150;
+            // 
+            // Col_CaID
+            // 
+            Col_CaID.DataPropertyName = "Email";
+            Col_CaID.HeaderText = "Email ";
+            Col_CaID.MinimumWidth = 6;
+            Col_CaID.Name = "Col_CaID";
+            Col_CaID.Width = 150;
+            // 
+            // Info_Address
+            // 
+            Info_Address.DataPropertyName = "Info_Address";
+            Info_Address.HeaderText = "Địa chỉ";
+            Info_Address.MinimumWidth = 6;
+            Info_Address.Name = "Info_Address";
+            Info_Address.Width = 125;
+            // 
+            // Salary
+            // 
+            Salary.DataPropertyName = "Salary";
+            Salary.HeaderText = "Lương";
+            Salary.MinimumWidth = 6;
+            Salary.Name = "Salary";
+            Salary.Width = 125;
+            // 
             // SalesPerson
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -313,6 +335,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "SalesPerson";
             Text = "SalesPerson";
+            Load += SalesPerson_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_NV).EndInit();
@@ -339,12 +362,14 @@
         private Label label2;
         private Label label1;
         private DataGridView dgv_NV;
+        private Button btn_XoaNV;
+        private Button btn_SuaNV;
+        private Button btn_ThemNV;
         private DataGridViewTextBoxColumn Col_CusID;
         private DataGridViewTextBoxColumn Col_Fullname;
         private DataGridViewTextBoxColumn Col_SDT;
         private DataGridViewTextBoxColumn Col_CaID;
-        private Button btn_XoaNV;
-        private Button btn_SuaNV;
-        private Button btn_ThemNV;
+        private DataGridViewTextBoxColumn Info_Address;
+        private DataGridViewTextBoxColumn Salary;
     }
 }
