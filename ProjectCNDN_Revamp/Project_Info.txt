@@ -1,0 +1,36 @@
+Giới thiệu sơ lược :
+
+Cấu trúc ứng dụng : Mô hình 3 lớp ( Three-Layer Model) 
+- DAL : Lớp dữ liệu ( thực hiện việc kết nối với CSDL, lấy dữ liệu và trả về thông qua gọi hàm, thực hiện việc thêm, chỉnh, xóa, tìm kiếm )
+- BLL : Lớp nghiệp vụ ( trung gian lớp UI và DAL gọi các hàm lớp DAL kiểm tra ràng buộc )
+- GUI : Lớp giao diện ( chứa các control trên form, mỗi control gọi hàm của lớp BLL tương ứng theo tác dụng của control đó.)
+
+
+Target Framework chung của Project : .NET7.0 ( dùng đc các package 7.x)
+Tên Package : Microsoft.EntityFrameWork.SqlServer ( ver 7.15 )
+
+File PROJECT_CNDN gồm :
+- Folder Project DataAccessLayer : Folder riêng biệt chứa project của lớp DAl ( Loại project : Class library .net7.0 )
+	+ Thực hiện việc kết nối csdl, thao tác trên csdl
+	+ Không thể gọi trực tiếp bởi GUI
+	
+- Folder Project BussinessLogicalLayer : Folder riêng biệt chứa project của lớp BLL ( Loại project : Class library .net7.0 )
+	+ Trung gian giữa DAL và GUI
+	+ Kiểm tra đầu vào dữ liệu và các ràng buộc.
+	+ Có thể dùng các hàm từ lớp DAL
+
+- Folder Project GUI( tương tự các file có chứa ..UI.. ) : Lớp giao diện chương trình. ( Loại project : Winform .net7.0 )
+	+ Giao diện người dùng, chứa các control thao tác.
+	+ Folder con : ChildForm : Chứa tất cả các form liên quan đến project
+	+ Gồm :
+		_ Form Khách hàng : Chứa thông tin tất cả khách hàng, có thể thêm, sửa, xóa thông qua các nút và textbox
+		_ Form Xe , Nhân viên, Nhà sản xuất, Giao dịch : Tương tự như trên.	
+		_ Form Thống kê : Liệt kê các thông tin như trên Form ( Chỉ có thể xem + tìm kiếm )
+
+
+Trình tự chạy chương trình :
+Form Login  ---> Form Main Menu ----> Form Con khác tùy vào nút đang được ấn.
+
+
+	
+
