@@ -17,14 +17,14 @@ namespace DataAccessLayer
             {
                 var customers = db.DSCustomer.ToList();
                 DataTable dt = new DataTable();
-                foreach(var prop in typeof(DataTable).GetProperties())
+                foreach(var prop in typeof(Customer).GetProperties())
                 {
                     dt.Columns.Add(prop.Name, prop.PropertyType);
                 }
                 foreach(var customer in customers)
                 {
                     DataRow dr = dt.NewRow();
-                    foreach(var prop in typeof (DataTable).GetProperties())
+                    foreach(var prop in typeof (Customer).GetProperties())
                     {
                         dr[prop.Name] = prop.GetValue(customer);
                     }

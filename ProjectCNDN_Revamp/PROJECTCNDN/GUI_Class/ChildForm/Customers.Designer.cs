@@ -45,13 +45,13 @@
             label2 = new Label();
             label1 = new Label();
             dgv_KhachHang = new DataGridView();
+            btn_XoaKH = new Button();
+            btn_SuaKH = new Button();
+            btn_ThemKH = new Button();
             Col_CusID = new DataGridViewTextBoxColumn();
             Col_Fullname = new DataGridViewTextBoxColumn();
             Col_SDT = new DataGridViewTextBoxColumn();
             Col_CaID = new DataGridViewTextBoxColumn();
-            btn_XoaKH = new Button();
-            btn_SuaKH = new Button();
-            btn_ThemKH = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_KhachHang).BeginInit();
             SuspendLayout();
@@ -236,34 +236,6 @@
             dgv_KhachHang.Size = new Size(823, 399);
             dgv_KhachHang.TabIndex = 19;
             // 
-            // Col_CusID
-            // 
-            Col_CusID.HeaderText = "Mã KH";
-            Col_CusID.MinimumWidth = 6;
-            Col_CusID.Name = "Col_CusID";
-            Col_CusID.Width = 110;
-            // 
-            // Col_Fullname
-            // 
-            Col_Fullname.HeaderText = "Họ và tên";
-            Col_Fullname.MinimumWidth = 6;
-            Col_Fullname.Name = "Col_Fullname";
-            Col_Fullname.Width = 200;
-            // 
-            // Col_SDT
-            // 
-            Col_SDT.HeaderText = "Số điện thoại";
-            Col_SDT.MinimumWidth = 6;
-            Col_SDT.Name = "Col_SDT";
-            Col_SDT.Width = 150;
-            // 
-            // Col_CaID
-            // 
-            Col_CaID.HeaderText = "Số thẻ";
-            Col_CaID.MinimumWidth = 6;
-            Col_CaID.Name = "Col_CaID";
-            Col_CaID.Width = 150;
-            // 
             // btn_XoaKH
             // 
             btn_XoaKH.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -297,6 +269,38 @@
             btn_ThemKH.Text = "Thêm thông tin KH";
             btn_ThemKH.UseVisualStyleBackColor = true;
             // 
+            // Col_CusID
+            // 
+            Col_CusID.DataPropertyName = "Customer_ID";
+            Col_CusID.HeaderText = "Mã KH";
+            Col_CusID.MinimumWidth = 6;
+            Col_CusID.Name = "Col_CusID";
+            Col_CusID.Width = 110;
+            // 
+            // Col_Fullname
+            // 
+            Col_Fullname.DataPropertyName = "FullName";
+            Col_Fullname.HeaderText = "Họ và tên";
+            Col_Fullname.MinimumWidth = 6;
+            Col_Fullname.Name = "Col_Fullname";
+            Col_Fullname.Width = 200;
+            // 
+            // Col_SDT
+            // 
+            Col_SDT.DataPropertyName = "Contact_Number";
+            Col_SDT.HeaderText = "Số điện thoại";
+            Col_SDT.MinimumWidth = 6;
+            Col_SDT.Name = "Col_SDT";
+            Col_SDT.Width = 150;
+            // 
+            // Col_CaID
+            // 
+            Col_CaID.DataPropertyName = "CreditCardNumber";
+            Col_CaID.HeaderText = "Số thẻ";
+            Col_CaID.MinimumWidth = 6;
+            Col_CaID.Name = "Col_CaID";
+            Col_CaID.Width = 150;
+            // 
             // Customers
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -313,6 +317,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "Customers";
             Text = "Customers";
+            Load += Customers_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_KhachHang).EndInit();
